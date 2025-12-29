@@ -39,10 +39,9 @@ ENV/
 .env
 .env.local
 
-# Models (if large files)
-models/*.pkl
-models/*.joblib
-!models/.gitkeep
+# Models - Included in repository for Render deployment
+# models/*.pkl  (commented out - models are needed for deployment)
+# models/*.joblib  (commented out - models are needed for deployment)
 
 # Logs
 *.log
