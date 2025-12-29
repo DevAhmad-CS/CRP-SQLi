@@ -1,0 +1,9 @@
+Query,Label
+SELECT EXP ( 1 ) ;,0
+SELECT FLOOR ( RAND ( ) * ( 10-5+1 ) +5 ) ;,0
+"SELECT CustomerName, ContactName, City FROM Customers WHERE Country = 'Brazil'; DROP VIEW view_name ; DROP VIEW [Brazil Customers];",0
+SELECT asleep ( s FROM usual RIGHT JOIN,0
+SELECT EXP ( 2 ) ;,0
+SELECT FLOOR ( 25 ) ;,0
+SELECT FLOOR ( 25.75 ) ;,0
+SELECT floor ( s ) FROM sugar,0

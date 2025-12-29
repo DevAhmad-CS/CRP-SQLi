@@ -1,0 +1,27 @@
+Logistic Regression Model - Validation Results
+==================================================
+
+Date: 2025-12-16 02:37:34
+
+Model Settings:
+  - max_iter: 1000
+  - C: 1.0
+  - penalty: l2
+
+Training Time: 0.13 seconds
+
+Metrics:
+  - Accuracy: 0.9887 (98.87%)
+  - Precision: 0.9988 (99.88%)
+  - Recall: 0.9762 (97.62%)
+  - F1-Score: 0.9874 (98.74%)
+
+Classification Report:
+               precision    recall  f1-score   support
+
+ Normal Query       0.98      1.00      0.99      2068
+SQL Injection       1.00      0.98      0.99      1724
+
+     accuracy                           0.99      3792
+    macro avg       0.99      0.99      0.99      3792
+ weighted avg       0.99      0.99      0.99      3792

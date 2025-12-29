@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SQL Injection Detection</title>
+    <!-- Three.js Library (required for Vanta.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    
+    <!-- Vanta.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Vanta.js Background -->
+    <div id="vanta-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">
+                    <span class="logo-text">SQLi</span>
+                    <span class="logo-accent">Detector</span>
+                </h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/statistics" class="nav-link">Statistics</a></li>
+                <li><a href="/about" class="nav-link active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="about-page">
+                <div class="page-hero">
+                    <h2 class="page-title"><span class="typing-text">About This Project</span></h2>
+                </div>
+                
+                <!-- About the Developer Section -->
+                <section class="about-section developer-section">
+                    <h3 class="section-title-small">About the Developer</h3>
+                    
+                    <div class="developer-card">
+                        <div class="developer-image-container">
+                            <div class="developer-image-wrapper">
+                                <img src="/static/images/profile.jpg" alt="Ahmad Mahmoud" class="developer-image">
+                                <div class="image-glow"></div>
+                            </div>
+                            <div class="university-logo-wrapper">
+                                <a href="https://www.htu.edu.jo/" target="_blank" rel="noopener noreferrer" class="university-link" title="Visit HTU Website">
+                                    <img src="/static/images/htu-logo.png" alt="HTU Logo" class="htu-logo">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="developer-info">
+                            <h4 class="developer-name"><span class="typing-text">Ahmad Mahmoud</span></h4>
+                            <p class="developer-title">Computer Science Student (<a href="https://www.htu.edu.jo/" target="_blank" rel="noopener noreferrer" class="htu-link">HTU</a>) | Web & Mobile Developer | Machine Learning Research (SQLi Detection)</p>
+                            
+                            <div class="developer-bio">
+                                <p>
+                                    I'm a Computer Science student at <a href="https://www.htu.edu.jo/" target="_blank" rel="noopener noreferrer" class="htu-link"><strong>Al-Hussein Technical University (HTU)</strong></a>, passionate about web and mobile development, and practical machine learning applications. In this project, I built an SQL Injection detection system using machine learning, from data preparation and model training to integrating the model into a web application for testing and validation.
+                                </p>
+                            </div>
+                            
+                            <div class="developer-contact">
+                                <a href="mailto:ahmadmahmouddev@gmail.com" class="contact-link" title="Email">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <span>Email</span>
+                                </a>
+                                
+                                <a href="https://github.com/DevAhmad-CS" target="_blank" rel="noopener noreferrer" class="contact-link" title="GitHub">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                                
+                                <a href="https://linkedin.com/in/ahmad-mahmoud-245883269" target="_blank" rel="noopener noreferrer" class="contact-link" title="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="about-section">
+                    <h3 class="section-title-small">Overview</h3>
+                    <p>
+                        This SQL Injection Detection System is a machine learning-based solution 
+                        designed to identify and prevent SQL injection attacks in real-time. 
+                        The system uses advanced Natural Language Processing (NLP) techniques 
+                        combined with Support Vector Machine (SVM) classification to achieve 
+                        high accuracy in detecting malicious SQL queries.
+                    </p>
+                </section>
+
+                <section class="about-section">
+                    <h3 class="section-title-small">Technology Stack</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <strong>Machine Learning:</strong>
+                            <span>Scikit-learn, SVM, Logistic Regression</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>NLP:</strong>
+                            <span>TF-IDF Vectorization</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Backend:</strong>
+                            <span>FastAPI, Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Frontend:</strong>
+                            <span>HTML, CSS, JavaScript</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-section">
+                    <h3 class="section-title-small">Key Features</h3>
+                    <ul class="features-list">
+                        <li>✅ Real-time SQL query analysis</li>
+                        <li>✅ High accuracy (99.53% on test set)</li>
+                        <li>✅ Low false positive rate (0.23%)</li>
+                        <li>✅ Fast prediction response</li>
+                        <li>✅ Confidence score for each prediction</li>
+                        <li>✅ Support for various SQL injection patterns</li>
+                    </ul>
+                </section>
+
+                <section class="about-section">
+                    <h3 class="section-title-small">Model Performance</h3>
+                    <p>
+                        The model was trained on a dataset of 25,278 SQL queries and achieved 
+                        the following performance metrics on the test set:
+                    </p>
+                    <ul class="performance-list">
+                        <li><strong>Accuracy:</strong> 99.53%</li>
+                        <li><strong>Precision:</strong> 99.77%</li>
+                        <li><strong>Recall:</strong> 99.19%</li>
+                        <li><strong>F1-Score:</strong> 99.48%</li>
+                    </ul>
+                </section>
+
+                <section class="about-section">
+                    <h3 class="section-title-small">Dataset</h3>
+                    <p>
+                        The training dataset consists of:
+                    </p>
+                    <ul class="dataset-list">
+                        <li>17,694 training samples</li>
+                        <li>3,792 validation samples</li>
+                        <li>3,792 test samples</li>
+                        <li>Balanced dataset (83.33% balance ratio)</li>
+                        <li>126 additional SQL injection patterns</li>
+                    </ul>
+                </section>
+
+                <div class="back-link">
+                    <a href="/" class="btn btn-primary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; 2025 SQL Injection Detection System. Powered by Machine Learning.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Vanta.js
+        VANTA.NET({
+            el: "#vanta-background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x797aff,
+            backgroundColor: 0x0f0f0f,
+            points: 20.00,
+            maxDistance: 23.00,
+            spacing: 20.00
+        });
+    </script>
+    <script src="/static/js/typing.js"></script>
+    <script src="/static/js/scroll-animations.js"></script>
+    <script src="/static/js/scroll-progress.js"></script>
+    <script src="/static/js/magnetic-buttons.js"></script>
+    <script src="/static/js/card-3d-tilt.js"></script>
+    <script src="/static/js/gradient-animation.js"></script>
+    <script src="/static/js/button-particles.js"></script>
+    <script src="/static/js/navbar-scroll.js"></script>
+    <script src="/static/js/reveal-text.js"></script>
+    <script src="/static/js/parallax-effect.js"></script>
+    <script src="/static/js/page-transitions.js"></script>
+</body>
+</html>
+

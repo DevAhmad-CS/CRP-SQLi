@@ -1,0 +1,20 @@
+SVM Model - Validation Results (Retrained)
+==================================================
+
+Training Time: 47.70 seconds
+
+Metrics:
+  - Accuracy: 0.9921 (99.21%)
+  - Precision: 0.9988 (99.88%)
+  - Recall: 0.9838 (98.38%)
+  - F1-Score: 0.9912 (99.12%)
+
+Classification Report:
+               precision    recall  f1-score   support
+
+ Normal Query       0.99      1.00      0.99      2068
+SQL Injection       1.00      0.98      0.99      1724
+
+     accuracy                           0.99      3792
+    macro avg       0.99      0.99      0.99      3792
+ weighted avg       0.99      0.99      0.99      3792

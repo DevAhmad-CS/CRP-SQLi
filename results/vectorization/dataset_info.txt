@@ -1,0 +1,12 @@
+Dataset Information
+==================================================
+
+Date: 2025-12-16 02:26:03
+
+Train Set: 17,694 samples
+Validation Set: 3,792 samples
+Test Set: 3,792 samples
+
+Train Set Balance:
+  - Normal Query: 9,651 (54.54%)
+  - SQL Injection: 8,043 (45.46%)
